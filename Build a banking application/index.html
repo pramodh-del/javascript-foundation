@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Banking Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Welcome to My Bank</h1>
+
+    <div id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <h2>Dashboard</h2>
+        <p>Welcome, <span id="user"></span>!</p>
+        <p>Account Balance: $<span id="balance">0</span></p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div id="transaction-container" style="display: none;">
+        <h2>Make a Transaction</h2>
+        <input type="number" id="amount" placeholder="Amount">
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+    </div>
+</body>
+
+</html>

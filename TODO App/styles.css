@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+#todo-container,
+#todo-list {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+#todo-container input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#todo-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#todo-list li button {
+    margin-left: 10px;
+}
